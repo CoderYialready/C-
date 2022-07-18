@@ -1,0 +1,3 @@
+﻿  字符串.c
+D:\Code\字符串\字符串\字符串.c(12,17): warning C4013: “strlen”未定义；假设外部返回 int
+  字符串.vcxproj -> D:\Code\字符串\x64\Debug\字符串.exe
