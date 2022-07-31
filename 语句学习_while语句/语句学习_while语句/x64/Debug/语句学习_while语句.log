@@ -1,0 +1,3 @@
+﻿  while语句.c
+D:\Code\语句学习_while语句\语句学习_while语句\while语句.c(30,1): warning C4047: “初始化”:“int”与“int (__cdecl *)(void)”的间接级别不同
+  语句学习_while语句.vcxproj -> D:\Code\语句学习_while语句\x64\Debug\语句学习_while语句.exe
