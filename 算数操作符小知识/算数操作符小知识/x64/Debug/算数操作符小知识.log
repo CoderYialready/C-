@@ -1,0 +1,3 @@
+﻿  .c
+D:\Code\C-\算数操作符小知识\算数操作符小知识\.c(6,1): warning C4305: “初始化”: 从“double”到“float”截断
+  算数操作符小知识.vcxproj -> D:\Code\C-\算数操作符小知识\x64\Debug\算数操作符小知识.exe
