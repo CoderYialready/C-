@@ -1,0 +1,11 @@
+﻿  .c
+D:\Code\C-\sizeof和数组\sizeof和数组\.c(5,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\Code\C-\sizeof和数组\sizeof和数组\.c(5,9): message : 请考虑在格式字符串中使用“%zd”
+D:\Code\C-\sizeof和数组\sizeof和数组\.c(9,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\Code\C-\sizeof和数组\sizeof和数组\.c(9,9): message : 请考虑在格式字符串中使用“%zd”
+D:\Code\C-\sizeof和数组\sizeof和数组\.c(15,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\Code\C-\sizeof和数组\sizeof和数组\.c(15,9): message : 请考虑在格式字符串中使用“%zd”
+D:\Code\C-\sizeof和数组\sizeof和数组\.c(16,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\Code\C-\sizeof和数组\sizeof和数组\.c(16,9): message : 请考虑在格式字符串中使用“%zd”
+D:\Code\C-\sizeof和数组\sizeof和数组\.c(18,10): warning C4133: “函数”: 从“char [10]”到“int *”的类型不兼容
+  sizeof和数组.vcxproj -> D:\Code\C-\sizeof和数组\x64\Debug\sizeof和数组.exe
