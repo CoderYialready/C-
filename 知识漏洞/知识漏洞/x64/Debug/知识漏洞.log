@@ -1,0 +1,6 @@
+﻿  .c
+D:\Code\C-\知识漏洞\知识漏洞\.c(7,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\Code\C-\知识漏洞\知识漏洞\.c(7,9): message : 请考虑在格式字符串中使用“%zd”
+D:\Code\C-\知识漏洞\知识漏洞\.c(7,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“size_t”
+D:\Code\C-\知识漏洞\知识漏洞\.c(7,9): message : 请考虑在格式字符串中使用“%zd”
+  知识漏洞.vcxproj -> D:\Code\C-\知识漏洞\x64\Debug\知识漏洞.exe
