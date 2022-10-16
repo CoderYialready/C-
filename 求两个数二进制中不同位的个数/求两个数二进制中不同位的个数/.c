@@ -10,7 +10,7 @@ int main()
 	int count = 0;
 	for (i = 0; i < 32; i++)
 	{
-		if ((a >> i) & 1 != (b >> i) & 1 )
+	    if (((a >> i) & 1)!= ((b >> i) & 1))
 		{
 			count++;
 		}
