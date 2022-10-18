@@ -13,8 +13,8 @@ int main()
 	//ÈýÄ¿²Ù×÷·û
 	int a = 2;
 	int b = 3;
-	int c = (a > b ? a : b);
-	int d = (b > a ? (a++) : (b += 1));
+	int c = a > b ? a : b;
+	int d = b > a ? (a++) : (b += 1);
 	printf("%d\n", c);
 	printf("%d\n", d);
 	printf("%d\n", a);
