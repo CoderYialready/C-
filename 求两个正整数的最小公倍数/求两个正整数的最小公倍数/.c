@@ -22,7 +22,7 @@ int main()
 			max = a;
 			min = b;
 		}
-
+		int n = max;
 		if (max % min != 0)
 	{
 		if ((max % min) == 0)
@@ -33,7 +33,12 @@ int main()
 		{
 			while (((max % min) != 0))
 			{
-				max *= 2;
+				//int i = 0;
+				//for (i = 0; i <= min; i++)
+				//{
+			 int m = n ;
+			 max += n;
+				//}
 			}
 			printf("%d", max);
 		}
