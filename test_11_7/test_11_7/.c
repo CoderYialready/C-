@@ -15,7 +15,7 @@ int main()
 	//int i = 1, n = 0;
 	//while(i <= 1000)
 	//{
-	int i = 1; int n = 0;
+	int i = 1; 
 	for (i = 1; i <= 1000; i++)
 	{
 		int j = 0;
@@ -31,14 +31,15 @@ int main()
 		if (fal == 1)
 		{
 			//printf("%d\n", i);
+			int n = 0;
 			int temp = i;
 			int ret = i;
-			while (i)
+			while (temp)
 			{
 				n++;
-				i /= 10;
+				temp /= 10;
 			}
-			i = temp;
+			 temp = i;
 			//printf("%d",n);
 			if (i >= 11)
 			{
@@ -51,7 +52,6 @@ int main()
 					printf("%d ", i);
 				}
 			}
-			n = 0;
 		}
 	}
 	return 0;
