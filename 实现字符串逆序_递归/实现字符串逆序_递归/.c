@@ -22,9 +22,6 @@ void reverse_string(char* str)
 		reverse_string(str + 1);
 	}
 	*(str + len - 1) = tem;
-
-
-
 }
 int main()
 {
