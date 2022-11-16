@@ -3,8 +3,8 @@
 #include <math.h>
 int main()
 {
-	/*int max, min;
-	int b = 0;
+	int max, min;
+	/*int b = 0;
 	int c = 100;
 	int a;
 	printf("«Î ‰»Î≥…º®:\n");
