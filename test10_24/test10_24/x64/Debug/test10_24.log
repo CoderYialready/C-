@@ -1,8 +1,0 @@
-﻿  .c
-D:\Code\C-\test10_24\test10_24\.c(5,7): warning C4101: “c1”: 未引用的局部变量
-D:\Code\C-\test10_24\test10_24\.c(5,15): warning C4101: “c3”: 未引用的局部变量
-D:\Code\C-\test10_24\test10_24\.c(5,23): warning C4101: “c5”: 未引用的局部变量
-D:\Code\C-\test10_24\test10_24\.c(5,27): warning C4101: “c6”: 未引用的局部变量
-D:\Code\C-\test10_24\test10_24\.c(5,11): warning C4101: “c2”: 未引用的局部变量
-D:\Code\C-\test10_24\test10_24\.c(5,19): warning C4101: “c4”: 未引用的局部变量
-  test10_24.vcxproj -> D:\Code\C-\test10_24\x64\Debug\test10_24.exe
