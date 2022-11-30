@@ -1,26 +1,42 @@
 #include <stdio.h>
-#include <string.h>
-void tj(char* c,int len)
+
+int shu_(int ret)
 {
-	int shu = 0,zm = 0,ot = 0;
-	int a=0,b=0,d=0,n;
-	for(n = 1;n <= len;n++)
+	int a = 0;
+	int j = 0,k = 0;
+		for(k = 1;k < ret;k++)
+		{
+			if(ret % k == 0 && ret != k)
+			{
+				j += k;
+				a = j;
+			}
+		}
+	return a;
+}
+void shu()
+{
+	int sum = 0;
+	int n = 0,i = 0;
+	for(n = 1;n <= 500;n++)
 	{
-		if(*c >= '0' && *c <= '9' )
-			shu++;
-		else if((*c >= 'A' && *c <= 'Z')||  (*c >= 'a' && *c <= 'z'))
-			zm++;
-		else
-			ot++;
-			c++;
-	}
-		printf("数字%d个 字母%d个 其他%d个",shu,zm,ot);
+		sum = 0;
+		for(i = 1;i < n;i++)
+		{
+			if(n % i == 0 && i != n)
+			{
+				sum += i;
+			}
+		}
+		if(shu_(sum) == n)
+		{
+			printf("%d--%d ",n,sum);
+		}
+	}	
+
 }
 int main()
 {
-	char c[100];
-	gets(c);
-	int len = strlen(c);
-	tj(c,len);
+	shu();	
 	return 0;
  } 
