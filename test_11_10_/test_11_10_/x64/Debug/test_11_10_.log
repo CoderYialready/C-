@@ -1,0 +1,4 @@
+﻿  源.c
+D:\Code\C-\test_11_10_\test_11_10_\源.c(6,6): warning C4101: “max”: 未引用的局部变量
+D:\Code\C-\test_11_10_\test_11_10_\源.c(6,11): warning C4101: “min”: 未引用的局部变量
+  test_11_10_.vcxproj -> D:\Code\C-\test_11_10_\x64\Debug\test_11_10_.exe
