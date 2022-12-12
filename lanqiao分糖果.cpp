@@ -32,7 +32,7 @@ int main()
 		{
 			sum += arr[j];
 		}
-		if(sum == arr[0]*count)
+		if(sum == arr[1]*count)
 		{
 			printf("%d",bu);
 			break;
