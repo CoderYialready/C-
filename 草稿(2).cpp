@@ -1,37 +1,18 @@
 #include <iostream>
-#include <stdlib.h>
+#include <set>
 using namespace std;
-
-int *func()
-{
-	int *p = new int(10);
-	return p;
-}
-
-void test01()
-{
-	int *pb = func();
-	cout << *pb << endl;
-	delete pb; 
-	cout << *pb << endl;
-}
-void test02()
-{
-	int *arr = new int[10];
-	for(int i =0;i < 10;i++)
-	{
-		arr[i] = i + 100;
-	}
-	delete [] arr;
-	for(int i =0;i < 10;i++)
-	{
-		cout << arr[i] << endl;	
-	}
-}
 int main()
 {
-	//test01();
-	test02();
-    return 0;
-}
+	set<double> a;
+	a.insert(2.5);
+	for (int i = 0; i < 6; i++) {
+		a.insert(i);
+	}
+	for (std::set<double>::iterator it = a.begin(); it != a.end(); it++) {
+		cout << *it << " ";
+	}
 
+
+
+	return 0;
+}
