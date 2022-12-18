@@ -4,14 +4,13 @@ int main()
 	int i = 0;
 	int n = 0;
 	int j = 0;
-	int k = 2;
 	int h = 1;
 	scanf("%d",&n);
 	int arr[n][n]; 
-	for(k = 2;k <= n;k++) 
+	for(i = 2;i <= n;i++) 
 	{
 		arr[0][0] = 1;
-		arr[0][h] = arr[0][h-1]+k;
+		arr[0][h] = arr[0][h-1]+i;
 		h++;
 	}
 	for(i = 1;i <= n-1;i++)
