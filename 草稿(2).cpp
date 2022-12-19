@@ -1,18 +1,12 @@
 #include <iostream>
-#include <set>
 using namespace std;
-int main()
-{
-	set<double> a;
-	a.insert(2.5);
-	for (int i = 0; i < 6; i++) {
-		a.insert(i);
-	}
-	for (std::set<double>::iterator it = a.begin(); it != a.end(); it++) {
-		cout << *it << " ";
-	}
-
-
-
-	return 0;
+int main(){
+    int m, n, i, cnt=0, vis[100000]={0};
+    cin>>m>>n;
+    vis[m] = vis[n] = 1;
+    for(i=1; cnt < 10000; i++)
+        if(vis[i]) vis[i+m] = vis[i+n] = 1, cnt++;
+        else cnt = 0;
+    cout<<i-10000-1<<endl;
+    return 0;
 }
