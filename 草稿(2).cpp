@@ -1,25 +1,8 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 int main() {
-    string s;
-    string s1 = "qiandao";
-    string s2 = "easy";
-    int n = 0, m =0, rec = 0, cnt = -1, flag = 1;
-    cin >> n >> m;
-    getchar();
-    while (n--) {
-        getline(cin, s);
-        rec = s.find(s1);
-        if (rec >= 0) continue;
-        rec = s.find(s2);
-        if (rec >= 0) continue;
-        cnt++;
-        if (cnt == m) {
-            cout << s;
-            flag = 0;
-        }
-    }
-    if (flag) cout << "Wo AK le";
-    return 0;
+	vector<vector<int>> v(9);
+	v[0].push_back(1);
+	cout << v[0][0];
+	return 0;
 }
