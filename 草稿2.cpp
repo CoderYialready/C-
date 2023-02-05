@@ -1,12 +1,21 @@
-#include <iostream>
-#include <string>
-#include <map>
-using namespace std;
+#include <cstdio>
+#include <cstring>
+
+struct Student {
+    int id;
+    char name[15];
+    Student () {} 
+    Student(int _id, char _name[]) {
+        id = _id;
+        strcpy(name, _name);
+    }
+};
+
 int main() {
-	string s1 = "AAA";
-	map<int,string> m;
-	m[1] = s1;
-	int a = 0;
-	cout << m[a+1];
-	return 0;
+    int id;
+    char name[15];
+    scanf("%d%s", &id, name);
+    Student student = Student(id, name);
+    printf("%d\n%s", student.id, student.name);
+    return 0;
 }
