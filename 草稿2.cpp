@@ -1,25 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main( ) {
-	vector<int> v;
-	v.push_back(0);
-	int n = 0, m= 0, k = 0;
-	scanf("%d%d", &n, &m);
-	for (int i = 0; i < n; i++) {
-		scanf("%d", &k);
-		v.push_back(k);
+int main() {
+	int arr[10];
+	int n = 0;
+	for (int i = 0; i < 10; i++) {
+		scanf("%d", &arr[i]);
 	}
-	if (m > n) m %= n;
-	int j = (int)v.size() - m;
-	for (j; j < (int)v.size(); j++) {
-		if (j == (int)v.size() - m) printf("%d", v[j]);
-		else printf(" %d", v[j]);
+	for (int i = 1; i < 10; i++) {
+		if (arr[i] > 0) {
+			printf("%d",i);
+			arr[i]--;
+			break;
+		}
 	}
-	for (int i = 1; i < (int)v.size() - m; i++) {
-		if (m != 0) printf(" %d", v[i]);
-		else {
-			if (i == (int)v.size() - m - 1) printf("%d", v[i]);
-			else printf("%d ", v[i]);
+	for (int i = 0; i < 10; i++) {
+		while (arr[i] != 0) {
+			printf("%d", i);
+			arr[i]--;
 		}
 	}
     return 0;
