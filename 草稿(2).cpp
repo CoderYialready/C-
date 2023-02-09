@@ -1,17 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
-bool isprime(int i) {
-	if (i == 0 || i == 1) return false;
-	for (int j = 2; j <= sqrt(i); j++) {
-		if (i%j == 0) return false;
+typedef long long ll;
+
+ll binaryPow(ll a, ll b, ll m) {
+	if (b == 0) return 1;
+	if (b%2 == 1) return a * binaryPow(a, b-1, m) % m;
+	else {
+		ll mul = binaryPow(a, b/2, m);
+		return (mul * mul) % m;
 	}
-	return true;
 }
+
 int main() {
-	
-		if (isprime(187)) cout << 187 << ' ';
-	
-	
+	ll a = binaryPow(2, 3, 3);
+	cout << a;
 	
 	return 0;
 }
