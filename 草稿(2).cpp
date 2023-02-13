@@ -1,19 +1,47 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long ll;
-
-ll binaryPow(ll a, ll b, ll m) {
-	if (b == 0) return 1;
-	if (b%2 == 1) return a * binaryPow(a, b-1, m) % m;
-	else {
-		ll mul = binaryPow(a, b/2, m);
-		return (mul * mul) % m;
+int n = 0, k = 0, p = 0, maxfacnum = -1;
+vector<int> temp, ans, fac;
+int power(int x) {
+	int ans = 1;
+	for (int i = 0; i < p; i++) {
+		ans *= x;
+	}
+	return ans;
+}
+void init() {
+	int i = 0, temp = 0;
+	while (temp <= n) {
+		fac.push_back(temp);
+		temp = power(++i);
 	}
 }
 
+void DFS(int index, int nowk, int sum, int facnum) {
+	if (nowk == k && sum == n) {
+		if (facnum > maxfacnum) {
+			ans = temp;
+			maxfacnum = facnum;
+		}
+		return;
+	}
+	if (nowk > k || sum > n) return;
+	if (index - 1 >= 0) {
+		temp.push_back(index);
+		DFS(index, nowk + 1, sum + fac[index], facnum + index);
+		temp.pop_back();
+		DFS(index - 1, nowk, sum, facnum);
+	}
+}
 int main() {
-	ll a = binaryPow(2, 3, 3);
-	cout << a;
-	
+	scanf("%d%d%d", &n, &k, &p);
+	init();
+	DFS(fac.size()-1, 0, 0, 0);
+	if (maxfacnum == -1) printf("Impossible");
+	else {
+		printf("%d = %d^%d", n, ans[0], p);
+		for (int i = 1; i < ans.size(); i++)
+		printf(" + %d^%d", ans[i], p);
+	}
 	return 0;
 }
